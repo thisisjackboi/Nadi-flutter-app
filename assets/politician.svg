@@ -1,0 +1,21 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="95" fill="#FFF7ED" stroke="#FF9933" stroke-width="4"/>
+  <!-- Body - Saffron Jacket -->
+  <path d="M40 200C40 150 160 150 160 200" fill="#FF9933"/>
+  <path d="M100 150V200" stroke="#E07000" stroke-width="2"/>
+  <!-- Scarf -->
+  <path d="M60 160C60 160 80 190 100 180C120 170 140 160 140 160" stroke="#138808" stroke-width="8" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="100" cy="100" r="45" fill="#FAD7BD"/>
+  <!-- Hair/Beard -->
+  <path d="M55 100C55 70 80 50 100 50C120 50 145 70 145 100C145 110 140 140 100 140C60 140 55 110 55 100Z" fill="#E2E8F0"/>
+  <path d="M55 100C55 70 80 50 100 50C120 50 145 70 145 100" fill="#F1F5F9"/>
+  <!-- Glasses -->
+  <path d="M75 100C75 100 80 110 95 110C110 110 115 100 115 100" stroke="#334155" stroke-width="2" fill="none"/>
+  <circle cx="82" cy="100" r="8" stroke="#334155" stroke-width="2" fill="none"/>
+  <circle cx="118" cy="100" r="8" stroke="#334155" stroke-width="2" fill="none"/>
+  <!-- Lotus Pin -->
+  <circle cx="140" cy="170" r="10" fill="white"/>
+  <path d="M136 172C136 172 140 165 144 172" stroke="#FF9933" stroke-width="2"/>
+  <path d="M140 174V166" stroke="#138808" stroke-width="1"/>
+</svg>

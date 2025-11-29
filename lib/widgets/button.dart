@@ -67,7 +67,7 @@ class NadiButton extends StatelessWidget {
     return SizedBox(
       width: fullWidth ? double.infinity : null,
       child: ElevatedButton(
-        onPressed: (disabled || isLoading) ? null : onPressed,
+        onPressed:  onPressed,
         style: ElevatedButton.styleFrom(
           backgroundColor: backgroundColor,
           foregroundColor: textColor,

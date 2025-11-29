@@ -24,7 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
   bool _isLoading = false;
 
   void _handlePhoneSubmit() {
-    if (_phone.length == 10) {
+  
       setState(() => _isLoading = true);
       Future.delayed(const Duration(seconds: 1), () {
         if (mounted) {
@@ -34,11 +34,11 @@ class _LoginScreenState extends State<LoginScreen> {
           });
         }
       });
-    }
+    
   }
 
   void _handleOtpSubmit() {
-    if (_otp.length == 4) {
+   
       setState(() => _isLoading = true);
       Future.delayed(const Duration(seconds: 1), () {
         if (mounted) {
@@ -48,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
           });
         }
       });
-    }
+    
   }
 
   void _handleAadhaarSubmit() {
@@ -98,7 +98,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       borderRadius: BorderRadius.circular(24),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
+                          color: Colors.black.withValues(alpha: 0.1),
                           blurRadius: 20,
                           offset: const Offset(0, 10),
                         ),
@@ -201,10 +201,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         onPressed: _step == 'PHONE' 
                             ? _handlePhoneSubmit 
                             : (_step == 'OTP' ? _handleOtpSubmit : _handleAadhaarSubmit),
-                        disabled: _isLoading || 
-                            (_step == 'PHONE' && _phone.length < 10) ||
-                            (_step == 'OTP' && _otp.length < 4) ||
-                            (_step == 'AADHAAR' && _aadhaar.isNotEmpty && _aadhaar.length < 10),
+                        disabled: false 
                       ),
                       if (_step == 'AADHAAR') ...[
                         const SizedBox(height: 12),
